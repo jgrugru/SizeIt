@@ -1,0 +1,4 @@
+*output/
+.vscode/
+.devcontainer/
+first_program.cpp
