@@ -22,17 +22,21 @@ A cli tool written in c++ that determines the size of folders and files.
 
 ## Examples
 Check only .py files in my current directory with the units of megabytes
+
 ```./bin/sizeit . --file-type .py -v --units gb```
 
 ## Installation
 Git clone and build the c++ binary
+
 ```git clone git@github.com:jgrugru/SizeIt.git```
 
-then 
+then run
+
 ```g++ -std=c++17 src/sizeit.cpp  -o bin/sizeit```
 
 # Add it to your global zsh environment
 Add this line in your *.zshrc* file
+
 ```bash
 alias sizeit="<filepath_to_bin>/sizeit"
 ```
