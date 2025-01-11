@@ -1,4 +1,7 @@
+sandbox/
 *output/
 .vscode/
 .devcontainer/
 first_program.cpp
+test_*
+httplib.h
