@@ -21,7 +21,7 @@ A cli tool written in c++ that determines the size of folders and files.
 ```bin/sizeit <file_path> --file-type .py```
 
 ## Examples
-Check only .py files in my current directory with the units of megabytes
+Check only .py files in my current directory with the units of gigabytes
 
 ```./bin/sizeit . --file-type .py -v --units gb```
 
