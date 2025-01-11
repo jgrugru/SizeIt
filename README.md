@@ -1,22 +1,37 @@
 # SizePath
 A cli tool written in c++ that determines the size of folders and files.
 
+# Demo
+![Demo](docs/demo.gif)
 
-## Build
-`g++ -std=c++17 src/sizeit.cpp  -o bin/sizeit`
+## Execute binary
+`bin/sizeit <file_path>`
 
-## Execute bin
-`bin/sizeit <folder_path>`
+## Arguments to binary
+`-v` -> verbose
 
-![Screenshot 1](docs/example_output.png)
+```bin/sizeit <file_path> -v```
 
-Use the quiet flag to not output any text but the totals
-`bin/sizeit <folder_path> -q`
+`--units` -> output storage units ("b", "mb", "gb")
 
-![Screenshot 2](docs/example_output_quiet.png)
+```bin/sizeit <file_path> --units gb```
+
+`--file-type` -> only check storage for specific file endings
+
+```bin/sizeit <file_path> --file-type .py```
+
+## Examples
+Check only .py files in my current directory with the units of megabytes
+```./bin/sizeit . --file-type .py -v --units gb```
+
+## Installation
+Git clone and build the c++ binary
+```git clone git@github.com:jgrugru/SizeIt.git```
+
+then 
+```g++ -std=c++17 src/sizeit.cpp  -o bin/sizeit```
 
 # Add it to your global zsh environment
-
 Add this line in your *.zshrc* file
 ```bash
 alias sizeit="<filepath_to_bin>/sizeit"
